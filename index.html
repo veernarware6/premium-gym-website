@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronFit | Premium Fitness Club</title>
+    <meta name="description" content="Transform your body and build strength at IronFit Premium Fitness Club.">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #101010;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: #181818;
+        }
+
+        .logo {
+            color: #00d4ff;
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background:
+            linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+            url("images/gym.jpg") center/cover no-repeat;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #00d4ff;
+        }
+
+        .hero p {
+            color: #cccccc;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #00d4ff;
+            color: #101010;
+            padding: 14px 28px;
+            margin-top: 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: white;
+            color: #101010;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0, 212, 255, 0.4);
+        }
+
+        .btn{
+            transition: all 0.3s ease;
+        }
+
+        section {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+            color: #00d4ff;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.4);
+        }
+
+        .service {
+            background: #202020;
+            padding: 30px;
+            border-radius: 10px;
+            width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        footer {
+            background: #181818;
+            padding: 25px;
+            text-align: center;
+            color: #aaa;
+        }
+
+        footer h3 {
+            color: #00d4ff;
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        footer p {
+            margin: 8px 0;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">IRONFIT</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#trainers">Trainers</a>
+            <a href="#membership">Membership</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <h1>BUILD YOUR <span>BEST</span> SELF</h1>
+            <p>Train Hard. Stay Strong. Become Unstoppable.</p>
+            <a href="#contact" class="btn">Join Our Gym</a>
+        </section>
+
+        <section id="about">
+            <h2>About IronFit</h2>
+            <p>Welcome to IronFit, where your fitness journey begins.
+               Build strength, improve fitness and achieve your goals.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+
+            <div class="services">
+                <div class="service">
+                    <h3>Weight Training</h3>
+                    <p>Build strength and muscle.</p>
+                </div>
+
+                <div class="service">
+                    <h3>Personal Training</h3>
+                    <p>Get guidance from expert trainers.</p>
+                </div>
+
+                <div class="service">
+                    <h3>Cardio Fitness</h3>
+                    <p>Improve stamina and endurance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="trainers">
+    <h2>Meet Our Trainers</h2>
+
+    <div class="services">
+
+        <div class="service">
+            <h3>Rahul Sharma</h3>
+            <p>Strength & Muscle Building</p>
+            <p>5+ Years Experience</p>
+        </div>
+
+        <div class="service">
+            <h3>Arjun Verma</h3>
+            <p>Weight Loss Specialist</p>
+            <p>4+ Years Experience</p>
+        </div>
+
+        <div class="service">
+            <h3>Vikram Singh</h3>
+            <p>Personal Fitness Trainer</p>
+            <p>6+ Years Experience</p>
+        </div>
+
+    </div>
+</section>
+
+        <section id="membership">
+    <h2>Our Membership Plans</h2>
+
+    <div class="services">
+
+        <div class="service">
+            <h3>Monthly Plan</h3>
+            <h2>₹999</h2>
+            <p>1 Month Membership</p>
+            <p>Gym Access</p>
+        </div>
+
+        <div class="service">
+            <h3>Quarterly Plan</h3>
+            <h2>₹2,499</h2>
+            <p>3 Months Membership</p>
+            <p>Gym + Cardio Access</p>
+        </div>
+
+        <div class="service">
+            <h3>Yearly Plan</h3>
+            <h2>₹7,999</h2>
+            <p>12 Months Membership</p>
+            <p>Full Gym Access</p>
+        </div>
+
+    </div>
+</section>
+
+        <section id="contact">
+            <h2>Start Your Fitness Journey</h2>
+            <p>Contact us today to learn about membership.</p>
+            <a
+    href="https://wa.me/919876543210"
+    class="btn"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+
+    Contact Us on WhatsApp
+</a>
+        </section>
+    </main>
+
+    <footer>
+        <h3>IRONFIT</h3>
+        <P>Train Hard. Stay Strong.Become Unstoppable.</P>
+        <p>Follow us on Instagram</p>
+        <p>©️ 2026 IronFit. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
